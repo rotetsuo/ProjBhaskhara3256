@@ -33,18 +33,18 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.valorDeA = new System.Windows.Forms.TextBox();
+            this.valorDeB = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.valorDeC = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.raizX1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.raizX2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnCalc = new System.Windows.Forms.Button();
+            this.btnLimp = new System.Windows.Forms.Button();
+            this.btnFec = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -90,19 +90,19 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Valor de A";
             // 
-            // textBox1
+            // valorDeA
             // 
-            this.textBox1.Location = new System.Drawing.Point(263, 89);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.valorDeA.Location = new System.Drawing.Point(263, 89);
+            this.valorDeA.Name = "valorDeA";
+            this.valorDeA.Size = new System.Drawing.Size(100, 20);
+            this.valorDeA.TabIndex = 4;
             // 
-            // textBox2
+            // valorDeB
             // 
-            this.textBox2.Location = new System.Drawing.Point(380, 89);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.valorDeB.Location = new System.Drawing.Point(380, 89);
+            this.valorDeB.Name = "valorDeB";
+            this.valorDeB.Size = new System.Drawing.Size(100, 20);
+            this.valorDeB.TabIndex = 6;
             // 
             // label3
             // 
@@ -114,12 +114,12 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Valor de B";
             // 
-            // textBox3
+            // valorDeC
             // 
-            this.textBox3.Location = new System.Drawing.Point(319, 154);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 8;
+            this.valorDeC.Location = new System.Drawing.Point(319, 154);
+            this.valorDeC.Name = "valorDeC";
+            this.valorDeC.Size = new System.Drawing.Size(100, 20);
+            this.valorDeC.TabIndex = 8;
             // 
             // label4
             // 
@@ -131,12 +131,13 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Valor de C";
             // 
-            // textBox4
+            // raizX1
             // 
-            this.textBox4.Location = new System.Drawing.Point(281, 412);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 10;
+            this.raizX1.Enabled = false;
+            this.raizX1.Location = new System.Drawing.Point(281, 412);
+            this.raizX1.Name = "raizX1";
+            this.raizX1.Size = new System.Drawing.Size(100, 20);
+            this.raizX1.TabIndex = 10;
             // 
             // label5
             // 
@@ -148,12 +149,13 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Raiz X1";
             // 
-            // textBox5
+            // raizX2
             // 
-            this.textBox5.Location = new System.Drawing.Point(411, 412);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 12;
+            this.raizX2.Enabled = false;
+            this.raizX2.Location = new System.Drawing.Point(411, 412);
+            this.raizX2.Name = "raizX2";
+            this.raizX2.Size = new System.Drawing.Size(100, 20);
+            this.raizX2.TabIndex = 12;
             // 
             // label6
             // 
@@ -165,38 +167,41 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Raiz X2";
             // 
-            // button1
+            // btnCalc
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(259, 198);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 42);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "CALCULAR";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCalc.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnCalc.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalc.Location = new System.Drawing.Point(259, 198);
+            this.btnCalc.Name = "btnCalc";
+            this.btnCalc.Size = new System.Drawing.Size(104, 42);
+            this.btnCalc.TabIndex = 13;
+            this.btnCalc.Text = "CALCULAR";
+            this.btnCalc.UseVisualStyleBackColor = false;
+            this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
             // 
-            // button2
+            // btnLimp
             // 
-            this.button2.BackColor = System.Drawing.Color.Goldenrod;
-            this.button2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(380, 198);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 42);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "LIMPAR";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnLimp.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnLimp.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimp.Location = new System.Drawing.Point(380, 198);
+            this.btnLimp.Name = "btnLimp";
+            this.btnLimp.Size = new System.Drawing.Size(112, 42);
+            this.btnLimp.TabIndex = 14;
+            this.btnLimp.Text = "LIMPAR";
+            this.btnLimp.UseVisualStyleBackColor = false;
+            this.btnLimp.Click += new System.EventHandler(this.btnLimp_Click);
             // 
-            // button3
+            // btnFec
             // 
-            this.button3.BackColor = System.Drawing.Color.OrangeRed;
-            this.button3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(319, 246);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(123, 47);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "FECHAR";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnFec.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnFec.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFec.Location = new System.Drawing.Point(319, 246);
+            this.btnFec.Name = "btnFec";
+            this.btnFec.Size = new System.Drawing.Size(123, 47);
+            this.btnFec.TabIndex = 15;
+            this.btnFec.Text = "FECHAR";
+            this.btnFec.UseVisualStyleBackColor = false;
+            this.btnFec.Click += new System.EventHandler(this.btnFec_Click);
             // 
             // label7
             // 
@@ -214,18 +219,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(521, 450);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.btnFec);
+            this.Controls.Add(this.btnLimp);
+            this.Controls.Add(this.btnCalc);
+            this.Controls.Add(this.raizX2);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.raizX1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.valorDeC);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.valorDeB);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.valorDeA);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
@@ -245,18 +250,18 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox valorDeA;
+        private System.Windows.Forms.TextBox valorDeB;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox valorDeC;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox raizX1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox raizX2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnCalc;
+        private System.Windows.Forms.Button btnLimp;
+        private System.Windows.Forms.Button btnFec;
         private System.Windows.Forms.Label label7;
     }
 }
